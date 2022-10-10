@@ -5,12 +5,16 @@
 #include <vector>
 #include <map>
 #include <sndfile.hh>
+#include <cmath>
+#include <fstream>
 
 class WAVHist {
   private:
 	std::vector<std::map<short, size_t>> counts;
 	std::map<short, size_t> mid;
 	std::map<short, size_t> side;
+	std::map<short, size_t> quantized;
+	std::map<short, size_t> MID_channel;
 
   public:
 	WAVHist(const SndfileHandle& sfh) {
@@ -46,7 +50,6 @@ class WAVHist {
 		for(const auto& elem : side)
 			std::cout << elem.first << '\t' << elem.second << '\n';
 	}
-
 };
 
 #endif

@@ -4,3 +4,4 @@ all:
 
 clean:
 	rm -rf build ../sndfile-example-bin
+

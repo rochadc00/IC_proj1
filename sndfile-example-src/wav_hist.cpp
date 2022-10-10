@@ -45,9 +45,10 @@ int main(int argc, char *argv[]) {
 		hist.update(samples);
 		hist.mid_channel(samples);
 		// hist.side_channel(samples);
+		// hist.quantization(samples);
     }
 
-	hist.dump(channel);
+	// hist.dump(channel);
 	return 0;
 }
 

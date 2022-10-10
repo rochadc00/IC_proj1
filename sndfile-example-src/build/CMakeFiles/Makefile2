@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /home/hugo/IC/sndfile-example-src/build
 all: CMakeFiles/wav_cp.dir/all
 all: CMakeFiles/wav_hist.dir/all
 all: CMakeFiles/wav_dct.dir/all
+all: CMakeFiles/wav_quant.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,6 +77,7 @@ preinstall:
 clean: CMakeFiles/wav_cp.dir/clean
 clean: CMakeFiles/wav_hist.dir/clean
 clean: CMakeFiles/wav_dct.dir/clean
+clean: CMakeFiles/wav_quant.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -155,6 +157,32 @@ wav_dct: CMakeFiles/wav_dct.dir/rule
 CMakeFiles/wav_dct.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_dct.dir/build.make CMakeFiles/wav_dct.dir/clean
 .PHONY : CMakeFiles/wav_dct.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/wav_quant.dir
+
+# All Build rule for target.
+CMakeFiles/wav_quant.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_quant.dir/build.make CMakeFiles/wav_quant.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_quant.dir/build.make CMakeFiles/wav_quant.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hugo/IC/sndfile-example-src/build/CMakeFiles --progress-num=7,8 "Built target wav_quant"
+.PHONY : CMakeFiles/wav_quant.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/wav_quant.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hugo/IC/sndfile-example-src/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/wav_quant.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hugo/IC/sndfile-example-src/build/CMakeFiles 0
+.PHONY : CMakeFiles/wav_quant.dir/rule
+
+# Convenience name for target.
+wav_quant: CMakeFiles/wav_quant.dir/rule
+.PHONY : wav_quant
+
+# clean rule for target.
+CMakeFiles/wav_quant.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_quant.dir/build.make CMakeFiles/wav_quant.dir/clean
+.PHONY : CMakeFiles/wav_quant.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
