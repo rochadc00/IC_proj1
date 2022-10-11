@@ -43,12 +43,12 @@ int main(int argc, char *argv[]) {
 	while((nFrames = sndFile.readf(samples.data(), FRAMES_BUFFER_SIZE))) {
 		samples.resize(nFrames * sndFile.channels());
 		hist.update(samples);
-		hist.mid_channel(samples);
+		// hist.mid_channel(samples);
 		// hist.side_channel(samples);
 		// hist.quantization(samples);
     }
 
-	// hist.dump(channel);
+	hist.dump(channel);
 	return 0;
 }
 

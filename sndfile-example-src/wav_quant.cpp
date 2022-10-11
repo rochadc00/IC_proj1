@@ -2,11 +2,8 @@
 #include <sndfile.hh>
 #include <vector>
 #include "wav_quant.h"
-// #include "matplotlibcpp.h"
 
 using namespace std;
-// namespace plt = matplotlibcpp;
-
 
 constexpr size_t FRAMES_BUFFER_SIZE = 65536;
 
@@ -47,7 +44,7 @@ int main(int argc, char *argv[]) {
     }
 
     int nBits;
-    cout << "How many bits do you want to remove sample?\n";
+    cout << "How many bits do you want to remove?\n";
     cin >> nBits;
 
     if(nBits < 1 || nBits > 15) {
@@ -64,7 +61,7 @@ int main(int argc, char *argv[]) {
         WAVQuant quant {samples.size(), short(nBits)};
         quant.quantization(samples);
         quantized_vector = quant.getQuantizedVector();
-        sfhOut.writef(quant.getQuantizedVector().data(), nFrames);
+        sfhOut.writef(quantized_vector.data(), nFrames);
     }
 
     return 0;

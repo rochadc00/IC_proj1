@@ -13,7 +13,6 @@ class WAVHist {
 	std::vector<std::map<short, size_t>> counts;
 	std::map<short, size_t> mid;
 	std::map<short, size_t> side;
-	std::map<short, size_t> quantized;
 	std::map<short, size_t> MID_channel;
 
   public:
