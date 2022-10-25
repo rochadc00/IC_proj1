@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/diana/Desktop/IC/sndfile-example-src/wav_cp.cpp
+iostream
+-
+vector
+-
+sndfile.hh
+-
+

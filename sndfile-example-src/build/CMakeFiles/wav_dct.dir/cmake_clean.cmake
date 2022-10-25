@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/hugo/IC/sndfile-example-bin/wav_dct"
-  "/home/hugo/IC/sndfile-example-bin/wav_dct.pdb"
+  "/home/diana/Desktop/IC/sndfile-example-bin/wav_dct"
+  "/home/diana/Desktop/IC/sndfile-example-bin/wav_dct.pdb"
   "CMakeFiles/wav_dct.dir/wav_dct.cpp.o"
-  "CMakeFiles/wav_dct.dir/wav_dct.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

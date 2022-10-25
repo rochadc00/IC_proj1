@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/diana/Desktop/IC/sndfile-example-src/wav_quant.cpp
+iostream
+-
+sndfile.hh
+-
+vector
+-
+wav_quant.h
+/home/diana/Desktop/IC/sndfile-example-src/wav_quant.h
+
+/home/diana/Desktop/IC/sndfile-example-src/wav_quant.h
+iostream
+-
+vector
+-
+math.h
+-
+
