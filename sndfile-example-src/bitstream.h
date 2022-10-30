@@ -11,10 +11,12 @@
 class bitstream{
 
 private:
+
     std::fstream file;
     char  buffer;
     size_t buffer_size;
     std::string mode;
+
 public:
     //mode = "r" for read, "w" for write
     
@@ -88,8 +90,8 @@ public:
         
     }
     // writeNBits
-    void writeNBits(int* val,int reps){
-        for (int i = 0; i <reps ; i++){
+    void writeNBits(int* val,int n){
+        for (int i = 0; i <n ; i++){
             int bit = val[i];
             printf("bit:%d\n",bit);
             writeBit(bit);
