@@ -39,13 +39,3 @@ class WAVQuant {
 };
 
 #endif
-
-/*
-bitstream
-
-1) abre stream para leitura(cria objeto tipo bitstream)
-
-2) pede 1 bit("get_bit()")
-
-se tiver um bit disponível no buffer, devolve bit, caso contrário, lê novo byte e devolve bit
-*/
