@@ -55,7 +55,8 @@ public:
                 return EOF;
             }
             
-            int bit = (buffer >>7)& 0x01;
+            // int bit = (buffer >>7)& 0x01;
+            int bit = (buffer & 0x80)>>7;
             std::cout << "bit:" << bit << std::endl;
             buffer = buffer << 1;
             buffer_size--;
