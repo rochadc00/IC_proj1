@@ -22,13 +22,19 @@ make clean                      # limpar programas de execução
 ---
 - Exercício 2:
 ```c++
-./sndfile-example-bin/wav_hist ../sample01.wav 0
+./sndfile-example-bin/wav_hist ../sample01.wav 0            # canal esquerdo
+                                               1            # canal direito
+                                               -mid         # canal MID
+                                               -side        # canal SIDE
+
 ```
 ---
 
 - Exercício 3:
 ```c++
-./sndfile-example-bin/wav_quant ../sample.wav 0 output.wav
+./sndfile-example-bin/wav_quant ../sample.wav 0 quantized_sample.wav
+
+criar histograma: ./sndfile_example-bin/wav_hist quantized_sample 0 >> quantized_sample.txt
 
 ```
 ---
