@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named decoder
+
+# Build rule for target.
+decoder: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 decoder
+.PHONY : decoder
+
+# fast build rule for target.
+decoder/fast:
+	$(MAKE) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/build
+.PHONY : decoder/fast
+
+#=============================================================================
+# Target rules for targets named encoder
+
+# Build rule for target.
+encoder: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 encoder
+.PHONY : encoder
+
+# fast build rule for target.
+encoder/fast:
+	$(MAKE) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/build
+.PHONY : encoder/fast
+
+#=============================================================================
 # Target rules for targets named wav_cmp
 
 # Build rule for target.
@@ -174,6 +200,60 @@ wav_cp: cmake_check_build_system
 wav_cp/fast:
 	$(MAKE) -f CMakeFiles/wav_cp.dir/build.make CMakeFiles/wav_cp.dir/build
 .PHONY : wav_cp/fast
+
+decoder.o: decoder.cpp.o
+
+.PHONY : decoder.o
+
+# target to build an object file
+decoder.cpp.o:
+	$(MAKE) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/decoder.cpp.o
+.PHONY : decoder.cpp.o
+
+decoder.i: decoder.cpp.i
+
+.PHONY : decoder.i
+
+# target to preprocess a source file
+decoder.cpp.i:
+	$(MAKE) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/decoder.cpp.i
+.PHONY : decoder.cpp.i
+
+decoder.s: decoder.cpp.s
+
+.PHONY : decoder.s
+
+# target to generate assembly for a file
+decoder.cpp.s:
+	$(MAKE) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/decoder.cpp.s
+.PHONY : decoder.cpp.s
+
+encoder.o: encoder.cpp.o
+
+.PHONY : encoder.o
+
+# target to build an object file
+encoder.cpp.o:
+	$(MAKE) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/encoder.cpp.o
+.PHONY : encoder.cpp.o
+
+encoder.i: encoder.cpp.i
+
+.PHONY : encoder.i
+
+# target to preprocess a source file
+encoder.cpp.i:
+	$(MAKE) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/encoder.cpp.i
+.PHONY : encoder.cpp.i
+
+encoder.s: encoder.cpp.s
+
+.PHONY : encoder.s
+
+# target to generate assembly for a file
+encoder.cpp.s:
+	$(MAKE) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/encoder.cpp.s
+.PHONY : encoder.cpp.s
 
 wav_cmp.o: wav_cmp.cpp.o
 
@@ -318,11 +398,19 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... decoder"
+	@echo "... encoder"
 	@echo "... wav_cmp"
 	@echo "... wav_quant"
 	@echo "... wav_dct"
 	@echo "... wav_hist"
 	@echo "... wav_cp"
+	@echo "... decoder.o"
+	@echo "... decoder.i"
+	@echo "... decoder.s"
+	@echo "... encoder.o"
+	@echo "... encoder.i"
+	@echo "... encoder.s"
 	@echo "... wav_cmp.o"
 	@echo "... wav_cmp.i"
 	@echo "... wav_cmp.s"

@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/diana/Desktop/IC/sndfile-example-src/bitstream.h
+stdio.h
+-
+stdlib.h
+-
+assert.h
+-
+fstream
+-
+iostream
+-
+
+/home/diana/Desktop/IC/sndfile-example-src/encoder.cpp
+iostream
+-
+fstream
+-
+string
+-
+bitstream.h
+/home/diana/Desktop/IC/sndfile-example-src/bitstream.h
+
