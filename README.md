@@ -10,7 +10,7 @@
 ## [Compilação dos exercícios](README.md)
 
 
-- Para todos os exercícios:
+- Comandos gerais:
 ```c++
 bin/class <all_arguments>       # executar class
 
