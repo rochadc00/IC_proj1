@@ -67,10 +67,3 @@ No diretório sndfile-example-src:
 Existem dois ficheiros, text.txt e bin.bin, que podem ser utilizados para testes.
 ```
 
----
-## Equipa
-| Name | Github | Email |  Contribuição(%) |
-|------|--------|-------|-------|
-| Diana Rocha | [rochadc00](https://github.com/rochadc00) | rochadc00@ua.pt | 25
-| Claudio Asensio | [ClaudioAsensio](https://github.com/ClaudioAsensio) | claudioasensio@ua.pt | 37.5
-| Hugo Domingos | [Hugo-Domingos](https://github.com/Hugo-Domingos) | hugodomingos@ua.pt | 37.5
