@@ -1,5 +1,7 @@
 /home/diana/Desktop/IC/sndfile-example-src/build/CMakeFiles/rebuild_cache.dir
 /home/diana/Desktop/IC/sndfile-example-src/build/CMakeFiles/edit_cache.dir
+/home/diana/Desktop/IC/sndfile-example-src/build/CMakeFiles/decoder.dir
+/home/diana/Desktop/IC/sndfile-example-src/build/CMakeFiles/encoder.dir
 /home/diana/Desktop/IC/sndfile-example-src/build/CMakeFiles/wav_cmp.dir
 /home/diana/Desktop/IC/sndfile-example-src/build/CMakeFiles/wav_quant.dir
 /home/diana/Desktop/IC/sndfile-example-src/build/CMakeFiles/wav_dct.dir
