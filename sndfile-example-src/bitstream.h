@@ -55,13 +55,13 @@ public:
                 return EOF;
             }
             
-            // int bit = (buffer >>7)& 0x01;
             int bit = (buffer & 0x80)>>7;
             std::cout << "bit:" << bit << std::endl;
             buffer = buffer << 1;
             buffer_size--;
-            return bit;
+        return bit;
     }
+
     // write bit
     void writeBit(int bit){
         if (bit != 0 && bit != 1){
@@ -79,6 +79,7 @@ public:
             buffer = 0;
         }
     }
+    
     // read N bits
     void readNBits(int n,int *val){
         for (int i = 0; i < n; i++){
