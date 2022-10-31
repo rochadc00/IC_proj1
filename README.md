@@ -40,16 +40,18 @@ criar histograma: ./sndfile-example-bin/wav_hist quantized_sample 0 >> quantized
 ---
 
 - Exercício 4:
-No diretório sndfile-example-src:
+
 ```c++
+No diretório sndfile-example-src:
 ../sndfile-example-bin/wav_quant sample.wav 0 quantized-sample.wav  # criar ficheiro quantizado
 ../sndfile-example-bin/wav_cmp sample.wav quantized-sample.wav      # comparar ficheiro original com o ficheiro quantizado
 ```
 ---
 
 - Exercício 5:
-No diretório sndfile-example-src:
+
 ```c++
+No diretório sndfile-example-src:
 ../sndfile-example-bin/wav_effects sample.wav left_mute.wav mute           # efeito de silenciar canal
 ../sndfile-example-bin/wav_effects sample.wav echo-output.wav single-echo  # efeito de single echo
 
@@ -61,6 +63,8 @@ No diretório sndfile-example-src:
 ./sndfile-example-bin/encoder from.txt to.bin       #escrever de um ficheiro de texto para um ficheiro binário
 
 ./sndfile-example-bin/decoder to.txt from.bin       #ler de um ficheiro binário e armazenar num ficheiro de texto
+
+Existem dois ficheiros, text.txt e bin.bin, que podem ser utilizados para testes.
 ```
 
 ---
