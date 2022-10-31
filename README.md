@@ -56,6 +56,8 @@ criar histograma: ./sndfile_example-bin/wav_hist quantized_sample 0 >> quantized
 ./sndfile-example-bin/encoder from.txt to.bin       #escrever de um ficheiro de texto para um ficheiro binário
 
 ./sndfile-example-bin/decoder to.txt from.bin       #ler de um ficheiro binário e armazenar num ficheiro de texto
+
+#existem 2 ficheiros,bin.bin e text.tx, na pasta sndfile-example-src que podem ser utilizados para alguns testes
 ```
 
 ---
